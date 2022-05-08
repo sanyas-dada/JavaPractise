@@ -1,0 +1,32 @@
+package leetcodeproblem;
+
+public class MaximumRepeatingNumber { 
+	
+	public static void main(String[] args) {
+		 int[] array;
+		 array = new int[] {1,1,0,1,1,1};
+		  int a = 1;
+		  int b = 0;
+		  int sum = 0;
+		  int check = 0;
+		  
+		  for(int i = 0; i<array.length;i++) {
+			  if(array[i]==a) {
+				  sum = sum+1;
+			  }
+			  if(array[i] == b) {
+				  check = check+1;
+			  }
+			  int max = Math.max(sum,check);
+			  
+			  
+		 	 
+		 }
+		  System.out.println("maximum repeating number and tiems:"+ max);
+	}
+	
+	// return the maximum consecutive numbers of one
+	
+	
+
+}
